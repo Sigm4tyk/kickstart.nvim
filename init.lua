@@ -182,7 +182,7 @@ vim.diagnostic.config {
 
   -- Can switch between these as you prefer
   virtual_text = true, -- Text shows up at the end of the line
-  virtual_lines = false, -- Teest shows up underneath the line, with virtual lines
+  virtual_lines = false, -- Test shows up underneath the line, with virtual lines
 
   -- Auto open the float, so you can easily read the errors when jumping with `[d` and `]d`
   jump = { float = true },
@@ -201,7 +201,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 vim.keymap.set('i', 'jk', '<Esc>', { desc = 'Exit insert mode' })
 
 -- Command mode
-vim.keymap.set('c', 'jk', '<C-c>', { desc = 'Exit command mode' })
+vim.keymap.set('c', '<Esc>', '<C-c>', { desc = 'Exit command mode' })
 
 -- Visual mode (though Esc already works well here)
 vim.keymap.set('v', 'jk', '<Esc>', { desc = 'Exit visual mode' })
