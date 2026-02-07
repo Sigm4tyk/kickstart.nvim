@@ -919,5 +919,8 @@ require('lazy').setup({
   },
 })
 
+vim.keymap.set({ 'n', 'v' }, 't', '$')
+vim.keymap.set({ 'n', 'v' }, 'T', '^')
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
